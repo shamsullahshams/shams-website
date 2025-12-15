@@ -1,113 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shams - Systems Engineer</title>
-<style>
-    /* Reset and base styles */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { line-height: 1.6; background-color: #f9f9f9; color: #333; }
-    a { text-decoration: none; color: #007acc; }
-    a:hover { text-decoration: underline; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamsullah Shams | IT Infrastructure Architect</title>
+    <style>
+        :root {
+            --primary-color: #004d99; /* Deep Professional Blue */
+            --secondary-color: #007bff; /* Lighter Accent Blue */
+            --background-light: #f4f7f9;
+            --text-dark: #333;
+            --text-light: #fff;
+            --border-color: #e0e0e0;
+        }
 
-    /* Header */
-    header { background-color: #007acc; color: #fff; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.1rem; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: var(--background-light); 
+            color: var(--text-dark); 
+        }
 
-    /* Navigation */
-    nav { text-align: center; margin: 1rem 0; }
-    nav a { margin: 0 1rem; font-weight: bold; }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
 
-    /* Sections */
-    section { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-    section h2 { margin-bottom: 1rem; color: #007acc; }
+        header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            padding: 30px 20px; 
+            background-color: var(--primary-color); 
+            color: var(--text-light); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
 
-    /* Experience timeline */
-    .timeline { list-style: none; }
-    .timeline li { margin-bottom: 1rem; padding-left: 1rem; border-left: 3px solid #007acc; }
-    .timeline li span { font-weight: bold; }
+        header h1 { 
+            margin-bottom: 5px; 
+            font-size: 2.5em; 
+        }
+        
+        .contact-info a { 
+            color: var(--text-light); 
+            text-decoration: none; 
+            margin: 0 15px;
+            transition: color 0.3s; 
+        }
+        .contact-info a:hover { color: #ccc; }
 
-    /* Cards */
-    .card-container { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; flex: 1 1 250px; }
+        section { 
+            background-color: white; 
+            padding: 30px; 
+            margin-bottom: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        }
 
-    /* Contact form */
-    form { display: flex; flex-direction: column; gap: 0.5rem; }
-    input, textarea { padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; width: 100%; }
-    button { padding: 0.7rem; border: none; border-radius: 5px; background: #007acc; color: white; font-weight: bold; cursor: pointer; }
-    button:hover { background: #005fa3; }
+        h2 { 
+            color: var(--primary-color); 
+            border-bottom: 3px solid var(--secondary-color); 
+            padding-bottom: 8px; 
+            margin-bottom: 25px; 
+            font-size: 1.8em;
+        }
 
-    /* Footer */
-    footer { text-align: center; padding: 1rem; background: #007acc; color: white; margin-top: 2rem; }
-</style>
+        .experience-entry { 
+            margin-bottom: 30px; 
+            padding-left: 20px; 
+            border-left: 4px solid var(--secondary-color); 
+        }
+        .experience-entry h3 { 
+            margin-bottom: 0; 
+            color: var(--primary-color); 
+            font-size: 1.2em; 
+        }
+        .experience-entry p.tenure { 
+            font-style: italic; 
+            color: #777; 
+            margin-top: 5px; 
+            margin-bottom: 10px; 
+            font-size: 0.9em;
+        }
+        
+        ul { padding-left: 20px; }
+        .skills-list { 
+            list-style: none; 
+            padding: 0; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+        }
+        .skills-list li { 
+            background-color: #e6f0ff; 
+            color: var(--primary-color);
+            padding: 8px 15px; 
+            border-radius: 20px; 
+            font-weight: 500;
+            border: 1px solid #cce0ff;
+        }
+        
+        .education-entry { margin-bottom: 15px; }
+        .education-entry strong { color: var(--primary-color); }
+
+        footer {
+            text-align: center; 
+            padding-top: 20px; 
+            font-size: 0.8em; 
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>Shams</h1>
-    <p>Systems Engineer | Cloud Solutions Enthusiast | MSP Specialist</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <div class="container">
+        <header>
+            <h1>SHAMSULLAH SHAMS</h1>
+            <p style="font-size: 1.3em;">IT Infrastructure Architect | Systems Engineer</p>
+            <p class="contact-info">
+                Edinbugh, Scotland | 
+                <a href="tel:07584756013">📞 07584756013</a> | 
+                <a href="mailto:shamszabul@gmail.com">📧 shamszabul@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/shamsullahshams" target="_blank">🔗 LinkedIn Profile</a>
+            </p>
+        </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I’m Shams, a practical and detail-oriented Systems Engineer originally from Afghanistan, now based in the UK. I have over 12 years of IT experience, mainly in MSP roles. Family and purpose drive my work and motivation.</p>
-</section>
+        <section id="summary">
+            <h2>✨ Professional Summary</h2>
+            <p>
+                An accomplished and passionate IT Infrastructure Architect and Systems Engineer with extensive international experience in designing, deploying, and optimizing core infrastructure services, virtualization, and comprehensive cloud solutions (Azure, AWS, M365). Proven ability to lead complex, large-scale projects (up to $125M, 2000+ users), mentor teams, and enforce robust cybersecurity frameworks (ISO 27001, Cyber Essentials Plus). Eager to leverage a Master's degree in Advanced Computer Science and deep technical skills in Infrastructure as Code (Terraform, Ansible), Networking, and Security to enhance organizational efficiency and meet strategic business goals.
+            </p>
+        </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <ul class="timeline">
-        <li><span>System Engineer - MSP (Current)</span>: Managing servers, Azure cloud, Checkmk monitoring, and enterprise IT solutions.</li>
-        <li><span>L1-L3 IT Support Roles (12+ years)</span>: Worked across 8 companies supporting networks, systems, and cloud infrastructures.</li>
-    </ul>
-</section>
-
-<section id="skills">
-    <h2>Certifications & Skills</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>Certifications</h3>
-            <ul>
-                <li>CCNA v3</li>
-                <li>MCSE 2019</li>
-                <li>AZ-104</li>
-                <li>AZ-305</li>
+        <section id="skills">
+            <h2>🛠️ Core Technical Skills & Competencies</h2>
+            <ul class="skills-list">
+                <li>**Infrastructure & Virtualization:** VSphere, Hyper-V, KVM, Proxmox, SCVMM, Infrastructure as a Code (Terraform, Ansible)</li>
+                <li>**Cloud Technologies:** Microsoft (Azure, Copilot, Intune, Entra ID, M365, AVD), AWS, Wasabi, SaaS, PaaS, IaaS</li>
+                <li>**Networking:** TCP/IP, VLANs, DHCP, DNS, OSI, Routing, Switching, Firewalls, SD-WAN, VPNs, Zero Trust, VOIP</li>
+                <li>**Systems & Security:** AD, GPO, Monitoring, IDS/IPS, SIEM, Vulnerability Scanning, EDR/XDR, ISO 27001, NIST, Cyber Essentials Plus</li>
+                <li>**Automation & Scripting:** Python, PowerShell, Zero-Touch Provisioning, PDQ Deploy, RMM</li>
+                <li>**Soft Skills:** ITIL, Project Management, Problem-solving, Critical Thinking, IT Asset Management</li>
             </ul>
-        </div>
-        <div class="card">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Windows Server & Desktop Administration</li>
-                <li>Azure Cloud & Solutions Architecture</li>
-                <li>Networking (LAN/WAN, Routing, Switching)</li>
-                <li>Checkmk Monitoring & Custom Plugins</li>
-                <li>Linux / Ubuntu Administration</li>
-            </ul>
-        </div>
+        </section>
+
+        <section id="experience">
+            <h2>💼 Professional Experience</h2>
+
+            <div class="experience-entry">
+                <h3>Systems Engineer – Infrastructure, Global MSP & MSSP </h3>
+                <p class="tenure">Edinburgh, UK | August 2024 – Present</p>
+                <ul>
+                    <li>Oversee and optimize core infrastructure services across multiple data centers, supporting **800+ clients**, ensuring high availability and performance of virtual machines, storage, and backup systems.</li>
+                    <li>Design and deploy infrastructure on public, private, and hybrid cloud environments, optimizing resources for cost-efficiency and security.</li>
+                </ul>
+            </div>
+
+            <div class="experience-entry">
+                <h3>Systems Engineer III, Dunedin IT</h3>
+                <p class="tenure">Glasgow, UK | March 2023 – July 2024</p>
+                <ul>
+                    <li>Designed, configured, and implemented a wide range of IT solutions including servers, networks, firewalls, DR, virtualization (Vcenter, ESXI, HyperV), and security suites (Vade, Mimcast, Proofpoint).</li>
+                    <li>Provided third-level support and mentored junior system and helpdesk engineers.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-entry">
+                <h3>IT Infrastructure Manager, ICRC</h3>
+                <p class="tenure">Kabul, Afghanistan | March 2020 – April 2022</p>
+                <ul>
+                    <li>Led all aspects of IT service delivery and Infrastructure for offices with over **2000 users**, ensuring optimal incident response and consistent uptime.</li>
+                    <li>Developed and implemented the country-wide annual ICT budget, overseeing resource allocation and establishing a robust IT asset management system.</li>
+                </ul>
+            </div>
+
+            <div class="experience-entry">
+                <h3>IT Infrastructure Manager, USAID – Chemonics</h3>
+                <p class="tenure">Kabul, Afghanistan | Nov 2014 – Nov 2017</p>
+                <ul>
+                    <li>Managed the maintenance and development of IT infrastructure for a **$125 million, multi-office USAID project** with over 300 employees.</li>
+                    <li>Liaised the enforcement of critical IT Policy, including Change Management and Service Improvement policies, ensuring governance standards.</li>
+                    <li>Managed the discovery, mitigation, and documentation of information technology risks for the program.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-entry">
+                <h3>Helpdesk Analyst, USAID – Chemonics</h3>
+                <p class="tenure">Zabul, Afghanistan | Nov 2011 – April 2014</p>
+                <ul>
+                    <li>Managed all components of project internal and external IT networks, including design, deployment, testing, and configuration.</li>
+                    <li>Provided expert level-three technical resolution for users.</li>
+                    <li>Installed and maintained critical core services including **Active Directory, DNS, DHCP, WSUS, and Group Policy**.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="education">
+            <h2>🎓 Education & Certifications</h2>
+            
+            <div class="education-entry">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Masters in Advanced Computer Science</strong> | Strathclyde University, Scotland (Graduated Jan 2024)</li>
+                    <li><strong>Bachelors in Computer Application</strong> | Bangalore University, India (2011)</li>
+                </ul>
+            </div>
+
+            <div class="education-entry">
+                <h3>Key Certifications</h3>
+                <ul class="skills-list">
+                    <li>Microsoft Azure Solutions Architect</li>
+                    <li>Microsoft Azure Administrator Associate</li>
+                    <li>Cisco Certified Network Associate (CCNA)</li>
+                    <li>MCSE: Core Infrastructure</li>
+                    <li>AWS Certified Solutions Architect - Associate</li>
+                    <li>Microsoft Certified Trainer (MCT)</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2025 Shamsullah Shams | Built for GitHub Pages.
+            </p>
+        </footer>
     </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you’d like to connect or discuss projects, feel free to reach out:</p>
-    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-
-<footer>
-    <p>&copy; 2025 Shams. All rights reserved.</p>
-</footer>
 
 </body>
 </html>
