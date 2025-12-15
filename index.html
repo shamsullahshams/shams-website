@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shams - Systems Engineer</title>
+<style>
+    /* Reset and base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { line-height: 1.6; background-color: #f9f9f9; color: #333; }
+    a { text-decoration: none; color: #007acc; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header { background-color: #007acc; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; }
+
+    /* Navigation */
+    nav { text-align: center; margin: 1rem 0; }
+    nav a { margin: 0 1rem; font-weight: bold; }
+
+    /* Sections */
+    section { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section h2 { margin-bottom: 1rem; color: #007acc; }
+
+    /* Experience timeline */
+    .timeline { list-style: none; }
+    .timeline li { margin-bottom: 1rem; padding-left: 1rem; border-left: 3px solid #007acc; }
+    .timeline li span { font-weight: bold; }
+
+    /* Cards */
+    .card-container { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; flex: 1 1 250px; }
+
+    /* Contact form */
+    form { display: flex; flex-direction: column; gap: 0.5rem; }
+    input, textarea { padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; width: 100%; }
+    button { padding: 0.7rem; border: none; border-radius: 5px; background: #007acc; color: white; font-weight: bold; cursor: pointer; }
+    button:hover { background: #005fa3; }
+
+    /* Footer */
+    footer { text-align: center; padding: 1rem; background: #007acc; color: white; margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Shams</h1>
+    <p>Systems Engineer | Cloud Solutions Enthusiast | MSP Specialist</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Shams, a practical and detail-oriented Systems Engineer originally from Afghanistan, now based in the UK. I have over 12 years of IT experience, mainly in MSP roles. Family and purpose drive my work and motivation.</p>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+        <li><span>System Engineer - MSP (Current)</span>: Managing servers, Azure cloud, Checkmk monitoring, and enterprise IT solutions.</li>
+        <li><span>L1-L3 IT Support Roles (12+ years)</span>: Worked across 8 companies supporting networks, systems, and cloud infrastructures.</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Certifications & Skills</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Certifications</h3>
+            <ul>
+                <li>CCNA v3</li>
+                <li>MCSE 2019</li>
+                <li>AZ-104</li>
+                <li>AZ-305</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Windows Server & Desktop Administration</li>
+                <li>Azure Cloud & Solutions Architecture</li>
+                <li>Networking (LAN/WAN, Routing, Switching)</li>
+                <li>Checkmk Monitoring & Custom Plugins</li>
+                <li>Linux / Ubuntu Administration</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to connect or discuss projects, feel free to reach out:</p>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Shams. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
