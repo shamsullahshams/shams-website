@@ -1,2 +1,1 @@
-My Personal Portfolio 
-Static HTML File
+My Personal Portfolio
